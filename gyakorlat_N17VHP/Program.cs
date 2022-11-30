@@ -10,7 +10,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 app.UseHttpsRedirection();
-app.MapControllers();
 app.UseDefaultFiles();
 app.UseStaticFiles();
+app.MapControllers();
 app.Run();
