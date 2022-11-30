@@ -1,0 +1,53 @@
+﻿
+div {
+    margin: 10px;
+    border: 1px solid black
+}
+#kulso {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+html, body {
+    height: 100%;
+}
+#kozepso {
+    display: flex;
+    flex-direction: row;
+}
+#valaszok {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+#kep1 {
+    overflow: hidden;
+    
+    flex-shrink: 0;
+}
+#kozepso {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1 
+}
+#vezerlo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.gomb{
+    padding: 20px;
+    width: 80px;
+}
+.katt:hover {
+    background-color: fuchsia;
+    color: white;
+}
+.jo{
+    background-color:green;
+}
+.rossz{
+    background-color:red;
+}
+.k:hover{
+    
+}

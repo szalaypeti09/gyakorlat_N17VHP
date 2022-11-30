@@ -18,5 +18,14 @@ namespace gyakorlat_N17VHP.Controllers
 
             return new JsonResult(kerdesek);
         }
+        [HttpGet]
+        [Route("questions/{sorszám}")]
+        public IActionResult M2(int sorszam)
+        {
+            Models.HajosContext context = new();
+            var kerdes = (from x in context.Questions where x.QuestionId == sorszam select x).FirstOrDefault();
+            if (kerdes == null) return BadRequest("Nincs ilyen sorszámú kér");
+            return new JsonResult(kerdes);
+        }
     }
 }
