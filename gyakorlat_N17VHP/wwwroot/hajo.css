@@ -48,6 +48,7 @@ html, body {
 .rossz{
     background-color:red;
 }
-.k:hover{
-    
+.k:hover {
+    background-color: fuchsia;
+    color: white;
 }
